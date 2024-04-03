@@ -6,10 +6,6 @@ if (getProperties("customUploadGradlePluginUrl") != null) {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    api "com.google.code.gson:gson:2.8.5"
+    api "com.google.code.gson:gson:2.10.1"
 }
 
-sourceCompatibility = "1.8"
-targetCompatibility = "1.8"
-
-//apply plugin: "com.vanniktech.maven.publish"

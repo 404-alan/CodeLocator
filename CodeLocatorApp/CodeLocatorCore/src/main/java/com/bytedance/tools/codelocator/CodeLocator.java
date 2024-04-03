@@ -426,7 +426,7 @@ public class CodeLocator {
                 }
             }
 
-            sApplication.registerReceiver(sCodeLocatorReceiver, intentFilter, null, sHandler);
+            sApplication.registerReceiver(sCodeLocatorReceiver, intentFilter, null, sHandler, Context.RECEIVER_EXPORTED);
             if (sGlobalConfig.isDebug()) {
                 Log.d(CodeLocator.TAG, "CodeLocator已注册Receiver, 现在可以使用插件抓取");
             }

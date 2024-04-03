@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        package="com.bytedance.tools.codelocator.demo">
+        xmlns:tools="http://schemas.android.com/tools">
 
     <application
             android:name="com.bytedance.tools.codelocator.demo.MainApplication"
@@ -11,7 +10,9 @@
             android:requestLegacyExternalStorage="true"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name="com.bytedance.tools.codelocator.demo.MainActivity">
+        <activity android:name="com.bytedance.tools.codelocator.demo.MainActivity"
+            android:exported="true"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
